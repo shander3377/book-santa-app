@@ -1,5 +1,19 @@
-z
-export default class WelcomeScreen extends React.Components {
+import React,{Component}from 'react';
+import {
+    View,
+    Text,
+    TextInput,
+    Modal,
+    KeyboardAvoidingView,
+    StyleSheet,
+    TouchableOpacity,
+    Alert,
+    ScrollView} from 'react-native';
+
+import SantaAnimation from '../components/santaClaus.js';
+import db from '../config';
+import firebase from 'firebase';
+export default class welcomeScreen extends React.Components {
   constructor(props) {
     super(props);
     this.state = {
